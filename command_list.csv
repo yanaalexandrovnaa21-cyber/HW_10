@@ -1,0 +1,29 @@
+    1  git config --global user.name "Yana"
+    2  [200~git config --global user.email "your-email@example.com"
+    3  git config --global user.email "yanaalexandrovnaa21@gmail.com"
+    4  git clone https://github.com/yanaalexandrovnaa21-cyber/HW_10.git
+    5  cd HW_10
+    6  touch text_ignore.txt
+    7  echo "text_ignore.txt" >> .gitignore
+    8  git status
+    9  echo "text_ignore.txt" > .gitignore
+   10  git status
+   11  git add
+   12  git add .
+   13  git commit -m "added ignore file"
+   14  git status
+   15  touch main_test.txt
+   16  git add .
+   17  git checkout -b develop
+   18  git checkout -b develop
+   19  touch develop_test.txt
+   20  git add .
+   21  git commit -m "create develop_test.txt"
+   22  echo "develop change" >> develop_test.txt
+   23  git status
+   24  git add .
+   25  git commit -m "update develop_test.txt"
+   26  git checkout main
+   27  git merge develop
+   28  git  log --online
+   29  history > command_list.csv
